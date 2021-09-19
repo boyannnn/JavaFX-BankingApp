@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.6638795986622074" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.TransferSceneController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="423.0">
+         <children>
+            <Button layoutX="87.0" layoutY="197.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="171.0" layoutY="197.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="255.0" layoutY="197.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="87.0" layoutY="124.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="171.0" layoutY="124.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="5">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="255.0" layoutY="124.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="6">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="87.0" layoutY="50.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="7">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="171.0" layoutY="50.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="255.0" layoutY="50.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="9">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="47.0" layoutY="349.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="124.0" text="Back">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetButton" layoutX="225.0" layoutY="349.0" mnemonicParsing="false" onAction="#reset" prefHeight="35.0" prefWidth="124.0" text="Reset">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="171.0" layoutY="271.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="1.0" layoutY="10.0" prefHeight="27.0" prefWidth="394.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="87.0" layoutY="271.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="64.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="255.0" layoutY="271.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="64.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="idButton" layoutX="39.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToTransactionLabel" prefHeight="50.0" prefWidth="50.0" />
+            <Button fx:id="transactionButton" layoutX="110.0" layoutY="130.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToReceiverIdLabel" prefHeight="50.0" prefWidth="50.0" />
+            <Label alignment="CENTER" layoutY="32.0" prefHeight="26.0" prefWidth="198.0" text="Transaction amount">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="22.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="155.0" />
+            <Label fx:id="transactionValueLabel" alignment="CENTER" layoutX="24.0" layoutY="63.0" prefHeight="50.0" prefWidth="155.0" text="£0.00">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="46.0" layoutY="225.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="106.0" />
+            <Label fx:id="receiverIdLabel" alignment="CENTER" layoutX="46.0" layoutY="225.0" prefHeight="50.0" prefWidth="106.0" text="0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Button layoutX="43.0" layoutY="308.0" mnemonicParsing="false" onAction="#transfer" prefHeight="50.0" prefWidth="113.0" text="Transfer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="46.0" layoutY="194.0" prefHeight="31.0" prefWidth="106.0" text="Receiver ID">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

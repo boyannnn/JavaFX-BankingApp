@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.LogInSceneController">
+   <children>
+      <Label fx:id="emailLabel" layoutX="157.0" layoutY="87.0" text="Email">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField" layoutX="251.0" layoutY="92.0" prefHeight="25.0" prefWidth="220.0" />
+      <PasswordField fx:id="passwordField" layoutX="252.0" layoutY="168.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="passwordLabel" layoutX="139.0" layoutY="163.0" text="Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="logInButton" layoutX="238.0" layoutY="265.0" mnemonicParsing="false" onAction="#logIn" prefHeight="35.0" prefWidth="124.0" text="Log In">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="290.0" layoutY="318.0" text="Or">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="237.0" layoutY="353.0" mnemonicParsing="false" onAction="#switchToRegisterScene" prefHeight="35.0" prefWidth="124.0" text="Register">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutY="216.0" prefHeight="19.0" prefWidth="600.0" textFill="RED">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

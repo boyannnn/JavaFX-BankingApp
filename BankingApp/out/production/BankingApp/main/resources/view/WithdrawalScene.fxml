@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="emailNameTextField" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.WithdrawalSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="225.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="155.0" />
+      <Button fx:id="one" layoutX="189.0" layoutY="261.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="two" layoutX="269.0" layoutY="261.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="2">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="three" layoutX="350.0" layoutY="261.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="four" layoutX="189.0" layoutY="193.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="4">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="five" layoutX="269.0" layoutY="193.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="5">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="six" layoutX="349.0" layoutY="193.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="6">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="seven" layoutX="188.0" layoutY="125.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="eight" layoutX="269.0" layoutY="125.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="nine" layoutX="350.0" layoutY="125.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="9">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="zero" layoutX="268.0" layoutY="328.0" mnemonicParsing="false" onAction="#processNumbers" prefHeight="56.0" prefWidth="64.0" text="0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="188.0" layoutY="328.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="64.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="349.0" layoutY="329.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="64.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="withdrawalValueLabel" alignment="CENTER" layoutX="223.0" layoutY="23.0" prefHeight="47.0" prefWidth="155.0" text="£0.00">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="67.0" prefHeight="0.0" prefWidth="600.0" text="will be withdrawn">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="2.0" layoutY="96.0" prefHeight="12.0" prefWidth="600.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="52.0" layoutY="397.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="124.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="239.0" layoutY="397.0" mnemonicParsing="false" onAction="#reset" prefHeight="35.0" prefWidth="124.0" text="Reset">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="withdrawButton" layoutX="425.0" layoutY="397.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="35.0" prefWidth="124.0" text="Withdraw">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

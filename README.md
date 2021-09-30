@@ -1,2 +1,10 @@
-# JavaFX-BankingApp
-![BankingApp](https://user-images.githubusercontent.com/86858764/133942452-c35abfa3-9a62-45c9-9913-4012b7daa4dc.png)
+A simple Banking JavaFX desktop application.
+
+Functionality:<br>
+Log in/off<br>
+Register<br>
+Deposit<br>
+Withdraw<br>
+Transfer to another user in DB<br>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/cRX5pDSfydw/0.jpg)](https://www.youtube.com/watch?v=cRX5pDSfydw)
